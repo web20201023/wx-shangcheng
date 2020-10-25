@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.wxml": "html",
+    "*.wxss": "css"
+  },
+  "liveServer.settings.port": 0,
+
+  "less.compile": {
+    "outExt": ".wxss"
+}
+} 

@@ -1,0 +1,7 @@
+<view class="upimg_wrap">
+  <image class="" src="{{src}}">
+  </image>
+  <icon class="icon-shanchu" type="clear" size="20" color="red">
+    
+  </icon>
+</view>

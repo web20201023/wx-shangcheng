@@ -1,0 +1,118 @@
+page{
+  padding-bottom: 90rpx;
+}
+.detail_swiper{
+  swiper{
+    height: 65vw;
+    text-align: center;
+    image{
+      width: 70%;
+    }
+  }
+}
+.goods_price{
+  color: #FF2D4A;
+  font-size: 38rpx;
+  padding: 15rpx;
+  font-weight: 500;
+}
+.goods_name_row{
+  display: flex;
+  border-top: 8rpx solid #dbdbdb;
+  border-bottom: 8rpx solid #dbdbdb;
+  padding: 10rpx 0;
+
+  .goods_name{
+    flex: 5;
+    color: #000;
+    font-size: 30rpx;
+    padding: 0 10rpx;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .goods_collect{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1rpx solid #000;
+    .iconfont{
+      font-size: 50rpx;
+    }
+    .icon-shoucang1{
+      font-size: 50rpx;
+      color: #FF2D4A;
+    }
+    .collect_text{}
+  }
+  
+  .goods_info{
+    .goods_info_title{
+      font-size: 38rpx;
+      color: #FF2D4A;
+      font-weight: 500;
+      padding: 15rpx;
+      border-bottom: 5rpx solid gray;
+      margin-bottom: 5px;
+    }
+    .goods_info_content{}
+  }
+}
+
+.btn_tool{
+  border-top: 1px solid #ccc;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  .tool_item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    position: relative;
+    .iconfont{
+      width: 50rpx;
+    }
+    button{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  .btn_cart{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 5rpx;
+    font-size: 30rpx;
+  }
+  .btn_buy{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF2D4A;
+    color: white;
+    border-radius: 5rpx;
+    font-size: 30rpx;
+  }
+}
+

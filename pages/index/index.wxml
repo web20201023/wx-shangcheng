@@ -1,0 +1,38 @@
+<view class="store_index">
+  <!-- 搜索框 -->
+  <Searchinput></Searchinput>
+  <!-- 轮播图 -->
+  <swiper class="index_swiper" autoplay="true" indicator-dots="true" indicator-color="white"
+    indicator-active-color="pink" circular="true">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index">
+      <navigator url="{{'/pages/goods_detail/index?goods_id='+item.goods_id}}">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <!-- 主题内容 -->
+  <!-- 导航 -->
+  <view class="index_case">
+    <navigator wx:for="{{caseList}}" wx:key="index" url="/pages/category/index" open-type="switchTab">
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+  </view>
+  <!-- 楼层 -->
+  <view class="index_floor">
+    <view class="floor_group" wx:for="{{floorList}}" wx:for-item="item1" wx:for-index="index1" wx:key="floor_title">
+      <view class="floor_title">
+        <image src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="floor_list">
+        <navigator 
+        wx:for="{{item1.product_list}}" 
+        wx:for-item="item2" 
+        wx:for-index="index2" 
+        wx:key="name" 
+        url="/pages/goods_list/index?query=运动鞋">
+          <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

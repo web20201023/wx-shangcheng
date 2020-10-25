@@ -1,0 +1,12 @@
+@import "./style/iconfont.wxss";
+@import "./style/reset.wxss";
+
+
+/* 主题颜色 */
+page{
+  --themColor:#FF2D4A;
+  font-size: 28rpx;
+}
+image{
+  width:100%
+}
